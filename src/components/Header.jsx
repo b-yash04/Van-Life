@@ -5,7 +5,7 @@ export default function Header(){
            <Link to="/" className="link"> <h1 className="title"> Van Life</h1></Link> 
             <nav>
                 <Link className="link" to="/about">About</Link>
-                <Link className="link" to="/vans">Vans</Link>
+                <Link className="link" to="/VanList">Vans</Link>
             </nav>
         </header>
        
