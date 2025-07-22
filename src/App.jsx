@@ -4,6 +4,7 @@ import Footer from "./components/Footer.jsx"
 import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
 import VanList from "./pages/VanList.jsx"
+import IndividualVan from "./pages/IndividualVan.jsx"
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
         <Route path = "/" element = {<Home/>}/>
         <Route path = "/about" element = {<About/>}/>
         <Route path = "/VanList" element = {<VanList/>}/>
+        <Route path = "/VanList/:id" element = {<IndividualVan/>}/>
       </Routes>
       <Footer />
     </>

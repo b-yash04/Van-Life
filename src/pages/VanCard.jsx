@@ -11,7 +11,7 @@ export default function VanCard(props){
     else{
         colorbtn = "black"
     }
-    console.log(props.vanImage)
+    
    
     return(
         <div className="van-card">

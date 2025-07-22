@@ -2,6 +2,8 @@ import FilterButtons from "../components/FilterButtons";
 import VanCard from "./VanCard";
 import "../../server.js"
 import React from "react"
+import {Link} from "react-router-dom"
+
 export default function VanList(){
     const [vanData, setVanData] = React.useState([]);
     React.useEffect(()=>{
@@ -10,15 +12,15 @@ export default function VanList(){
         .then(data => setVanData(data.vans));
     },[])
     const vanDataArr = vanData.map((item)=>
-            (
+            (<Link className="list-link" to ={`/VanList/${item.id}` }key = {item.id}>
             <VanCard 
-                    key = {item.id}
                     vanImage = {item.imageUrl}
                     vanAlt = {`${item.name} van`}
                     vanName ={item.name}
                     price = {item.price}
                     filterName ={item.type}
-            />        
+            />  
+            </Link>      
             ))
     return (
         <div className="van-list">

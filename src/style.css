@@ -247,3 +247,61 @@ main{
     min-width: 600px;
     margin-bottom: 30px;
 }
+.van{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    width: 100%;
+    align-items: center;
+}
+.back{
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.van img{
+    height: 340px;
+    width: 340px;
+;
+}
+.ind-card{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    gap: 30px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,4);
+    padding: 20px;
+}
+.rent{
+    
+    height: 40px;
+    width: 340px;
+    border: none;
+    background-color:#FF8C38;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.875rem;
+}
+.list-link{
+    color : black;
+    text-decoration: none;
+}
+.description{
+    font-size: 0.8rem;
+    text-align: justify;
+    width: 340px;
+    font-weight: 500;
+}
+.van-name{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.price{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.van{
+    margin-bottom: 40px;
+    
+}
